@@ -1,0 +1,12 @@
+{
+  "configuration": {
+    "server_url": "https://10.0.10.138:8834",
+    "verify": false,
+    "policy": "GHOST (glibc) Detection",
+    "target": "10.0.10.138",
+    "scan_name": "Test Scanner",
+    "scan_description": "Test Scan Description"
+  },
+  "description": "Run the Nessus scanner.",
+  "plugin_name": "minion.plugins.nessus.NessusPlugin"
+}
