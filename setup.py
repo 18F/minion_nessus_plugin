@@ -8,8 +8,6 @@ install_requires = [
     'minion-backend'
 ]
 
-scripts = ['scripts/minion-nessus-baseline']
-
 setup(name='minion-nessus-plugin',
       version='0.1',
       description='Nessus Plugin for Minion',
@@ -20,5 +18,4 @@ setup(name='minion-nessus-plugin',
       namespace_packages=['minion', 'minion.plugins'],
       zip_safe = True,
       include_package_data=True,
-      install_requires = install_requires,
-      scripts=scripts)
+      install_requires = install_requires)

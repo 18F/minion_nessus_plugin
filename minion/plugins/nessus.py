@@ -68,7 +68,6 @@ class NessusPlugin(BlockingPlugin):
                 enable_logging to True
         """
 
-        self.logger.debug('do_configure')
         self.server_url = self.configuration.get('server_url')
         self._username = os.environ.get('NESSUS_USER', '')
         self._password = os.environ.get('NESSUS_PASS', '')
@@ -90,6 +89,7 @@ class NessusPlugin(BlockingPlugin):
 
             fh = logging.FileHandler(logging_file)
             self.logger.addHandler(fh)
+        self.logger.debug('do_configure')
 
     def build_url(self, resource):
         return '{0}{1}'.format(self.server_url, resource)
