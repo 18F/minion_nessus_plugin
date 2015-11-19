@@ -124,7 +124,7 @@ class NessusPlugin(BlockingPlugin):
 
         if r.status_code != 200:
             e = r.json()
-            self.logger.error('Unexpected response from Nessus', e['error'])
+            self.logger.error('Unexpected response from Nessus' + e['error'])
 
         # When downloading a scan we need the raw contents not the JSON data.
         if 'download' in resource or method == 'DELETE':

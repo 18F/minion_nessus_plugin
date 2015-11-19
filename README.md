@@ -53,3 +53,4 @@ TODO
 
 * Tests
 * More configuration options, and reasonable defaults
+* Correct configuration issue with Celery (/minion-env/bin/minion-plugin-worker)
